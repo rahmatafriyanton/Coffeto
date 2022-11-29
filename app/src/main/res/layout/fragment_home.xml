@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".ui.HomeFragment">
+
+
+    <TextView
+        android:id="@+id/helloText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Hello!"
+        android:fontFamily="@font/montserrat_medium"
+        android:textColor="#000"
+        android:textSize="32sp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/promoCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/helloText"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#B1464A"
+        app:cardCornerRadius="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="25dp">
+
+            <TextView
+                android:id="@+id/promoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Get 30% \nPromo!"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/promoText"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#C58F91"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Buy Now"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                app:cornerRadius="15dp" />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/promoCard"
+        android:layout_marginTop="35dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/foodMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:backgroundTint="#fff"
+            android:layout_weight="1"
+            app:cardCornerRadius="15dp"
+            android:layout_margin="5dp"
+            app:cardElevation="2dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/foodImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/ic_food" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Makanan"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textSize="18sp"
+                    android:textColor="#000"
+                    android:layout_below="@+id/foodImage"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"/>
+            </RelativeLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="0dp"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/drinkMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:backgroundTint="#fff"
+            app:cardCornerRadius="15dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            app:cardElevation="2dp">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/drinkImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/ic_drink" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Minuman"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textSize="18sp"
+                    android:textColor="#000"
+                    android:layout_below="@+id/drinkImage"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"/>
+            </RelativeLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

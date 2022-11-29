@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+
+
+    <TextView
+        android:id="@+id/jumlah"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="@drawable/cart_bordered_text"
+        android:fontFamily="@font/montserrat_semibold"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="1x"
+        android:textColor="#000"
+        android:textSize="16dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@+id/jumlah">
+
+        <TextView
+            android:id="@+id/nama_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="Pizza"
+            android:textAllCaps="true"
+            android:textColor="#000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/edit_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nama_menu"
+            android:fontFamily="@font/montserrat"
+            android:text="Edit"
+            android:textColor="#B1464A"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:id="@+id/total_harga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Rp 20.000"
+            android:textColor="#000"
+            android:textSize="14dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/total_harga"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/decrease"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/cart_circle_text"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:text="-"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/qty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="10dp"
+                android:layout_toRightOf="@+id/decrease"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+
+            <TextView
+                android:id="@+id/increase"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/qty"
+                android:background="@drawable/cart_circle_text"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:text="+"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>
